@@ -6,11 +6,11 @@ import TeamsList from './components/teams/TeamsList.vue';
 import UsersList from './components/users/UsersList.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        { path: '/teams', component: TeamsList }, // domain.com/teams => ...
-        { path: '/users', component: UsersList } 
-    ]
+  history: createWebHistory(),
+  routes: [
+    { path: '/teams', component: TeamsList }, // our-domain.com/teams => TeamsList
+    { path: '/users', component: UsersList },
+  ]
 });
 
 const app = createApp(App)
